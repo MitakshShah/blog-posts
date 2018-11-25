@@ -14,3 +14,5 @@ define('URL_ROOT', 'http://localhost/blog-posts');
 // Site Name
 // Replace the sitename with yours own
 define('SITE_NAME', 'Blog-Posts');
+
+define('APP_VERSION','1.0.0');
