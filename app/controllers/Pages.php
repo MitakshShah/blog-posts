@@ -9,15 +9,18 @@ class Pages extends Controller {
 
     public function index() {
         $data = [
-            'title' => 'ViD-MVC Php Framework',
+            'title' => 'Blog Posts',
+            'description' => 'Simple Social Blog site built on ViD-MVC Php framework.'
         ];
         $this->view('pages/index', $data);
     }
 
-    public function test() {
+    public function about() {
         $data = [
-            'title' => 'Test'
+            'title' => 'About',
+            'description' => 'An app to share blog posts with other users.'
+
         ];
-        $this->view('pages/test', $data);
+        $this->view('pages/about', $data);
     }
 }
