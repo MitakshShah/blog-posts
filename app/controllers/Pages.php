@@ -9,7 +9,7 @@ class Pages extends Controller {
 
     public function index() {
         $data = [
-            'title' => 'ViD-MVC Php Framework',
+            'title' => 'Blog Posts',
         ];
         $this->view('pages/index', $data);
     }
