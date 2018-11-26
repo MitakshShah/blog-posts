@@ -52,4 +52,13 @@ class User {
             return false;
         }
     }
+
+    public function getUserById($id){
+        $this->db->query("SELECT * from users WHERE id = :id");
+        $this->db->bind(':id',$id);
+
+        $row = $this->db->getItem();
+
+        return $row;
+    }
 }
