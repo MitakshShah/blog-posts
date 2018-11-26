@@ -8,6 +8,9 @@ class Pages extends Controller {
     }
 
     public function index() {
+        if(isLoggedIn()){
+            redirect('posts');
+        }
         $data = [
             'title' => 'Blog Posts',
             'description' => 'Simple Social Blog site built on ViD-MVC Php framework.'
