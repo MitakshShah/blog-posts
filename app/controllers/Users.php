@@ -163,8 +163,8 @@ class Users extends Controller{
 
     public function createUserSession($user){
         $_SESSION['user_id'] = $user->id;
-        $_SESSIOn['user_email'] = $user->email;
-        $_SESSIOn['user_name'] = $user->name;
+        $_SESSION['user_email'] = $user->email;
+        $_SESSION['user_name'] = $user->name;
         redirect('posts');
     }
 
