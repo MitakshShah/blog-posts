@@ -9,7 +9,7 @@ define('DB_NAME','blog_posts');
 define('APP_ROOT',dirname(dirname(__FILE__)));
 
 // URL Root
-define('URL_ROOT', 'http://localhost/blog-posts');
+define('URL_ROOT', 'https://blog-posts-demo.herokuapp.com');
 
 // Site Name
 // Replace the sitename with yours own
